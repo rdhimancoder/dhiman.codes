@@ -2291,9 +2291,9 @@
         let currentTheme = 'dark';
 
         themeToggle.addEventListener('click', () => {
-            currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            currentTheme = currentTheme === 'light' ? 'dark' : 'light';
             document.documentElement.setAttribute('data-theme', currentTheme);
-            themeToggle.textContent = currentTheme === 'dark' ? '🌙' : '☀️';
+            themeToggle.textContent = currentTheme === 'light' ? '☀️' : '🌙';
         });
 
         // ===== Language Toggle =====
