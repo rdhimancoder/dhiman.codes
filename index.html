@@ -358,13 +358,13 @@
             top: 100%;
             left: 0;
             width: 100%;
-            background: #fff /*var(--bg-secondary)*/;
+            background: var(--bg-secondary);
             border-bottom: 1px solid var(--border);
             padding: 24px;
             z-index: 999;
         }
 
-        .mobile-menu.active { display: block; }
+        .mobile-menu.active { display: block; background: #fff;}
 
         .mobile-menu a {
             display: block;
@@ -1349,7 +1349,7 @@
                     <a href="#cta" class="btn btn-primary" style="padding: 10px 24px; font-size: 0.85rem;" data-i18n="nav_cta">Get Started</a>
                     <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
                         <span></span><span></span><span></span>
-                    </button>-
+                    </button>
                 </div>
             </div>
         </div>
