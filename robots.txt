@@ -5,4 +5,4 @@ Disallow: /private/
 Disallow: /api/
 Disallow: /*?*sort=
 
-Sitemap: https://www.example.com/sitemap.xml
+Sitemap: https://rdhimancoder.github.io/dhiman.codes/sitemap.xml
