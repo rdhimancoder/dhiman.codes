@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Sitemap | Dhiman Codes - Web Development & ERP Systems</title>
+    <meta name="description" content="Complete HTML sitemap directory for Dhiman Codes. Browse all pages, web development services, ERP solutions, client case studies, and resources.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://rdhimancoder.github.io/dhiman.codes/sitemap.html">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://rdhimancoder.github.io/dhiman.codes/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Sitemap",
+        "item": "https://rdhimancoder.github.io/dhiman.codes/sitemap.html"
+      }]
+    }
+    </script>
+
+    <style>
+        :root {
+            --bg-main: #0b0f19;
+            --bg-card: #131b2e;
+            --bg-card-hover: #1a253e;
+            --accent-blue: #3b82f6;
+            --accent-cyan: #06b6d4;
+            --accent-gradient: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+            --text-primary: #f3f4f6;
+            --text-secondary: #9ca3af;
+            --text-muted: #6b7280;
+            --border-color: #1f293d;
+            --border-hover: #374151;
+            --badge-bg: rgba(59, 130, 246, 0.12);
+            --badge-text: #60a5fa;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+            min-height: 100vh;
+        }
+
+        /* Header Navigation */
+        header {
+            background-color: rgba(11, 15, 25, 0.9);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 1rem 2rem;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo span {
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .btn-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1.2rem;
+            background-color: var(--bg-card);
+            color: var(--text-primary);
+            text-decoration: none;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .btn-back:hover {
+            border-color: var(--accent-blue);
+            color: #fff;
+            transform: translateY(-1px);
+        }
+
+        /* Main Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem 5rem;
+        }
+
+        /* Hero Banner */
+        .hero {
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 0.35rem 1rem;
+            background: var(--badge-bg);
+            color: var(--badge-text);
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            border: 1px solid rgba(59, 130, 246, 0.3);
+        }
+
+        .hero h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            color: var(--text-secondary);
+            font-size: 1.15rem;
+            max-width: 680px;
+            margin: 0 auto 2rem;
+        }
+
+        /* Live Search Box */
+        .search-box {
+            max-width: 500px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 0.9rem 1.2rem 0.9rem 3rem;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            color: #fff;
+            font-size: 0.95rem;
+            outline: none;
+            transition: all 0.2s ease;
+        }
+
+        .search-box input:focus {
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+            pointer-events: none;
+        }
+
+        /* Stats Counter Bar */
+        .stats-bar {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.2rem 2rem;
+            margin-bottom: 2.5rem;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            text-align: center;
+        }
+
+        .stat-item .number {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--accent-cyan);
+        }
+
+        .stat-item .label {
+            font-size: 0.82rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Sitemap Grid Layout */
+        .sitemap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .sitemap-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 1.8rem;
+            transition: all 0.25s ease;
+        }
+
+        .sitemap-card:hover {
+            border-color: var(--border-hover);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .card-icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 10px;
+            background: var(--badge-bg);
+            color: var(--accent-cyan);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .card-header h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        /* Link List */
+        .link-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+
+        .link-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .link-title {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.98rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            transition: color 0.2s ease;
+        }
+
+        .link-title:hover {
+            color: var(--accent-cyan);
+        }
+
+        .link-title svg {
+            width: 14px;
+            height: 14px;
+            opacity: 0;
+            transform: translateX(-4px);
+            transition: all 0.2s ease;
+        }
+
+        .link-title:hover svg {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .link-desc {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            line-height: 1.4;
+        }
+
+        .link-meta {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            margin-top: 0.2rem;
+        }
+
+        .url-badge {
+            font-family: monospace;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            background: rgba(255, 255, 255, 0.04);
+            padding: 0.15rem 0.5rem;
+            border-radius: 4px;
+        }
+
+        .badge-status {
+            font-size: 0.72rem;
+            padding: 0.1rem 0.4rem;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .status-live {
+            background: rgba(16, 185, 129, 0.15);
+            color: #10b981;
+        }
+
+        .status-page {
+            background: rgba(59, 130, 246, 0.15);
+            color: #60a5fa;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid var(--border-color);
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.88rem;
+            background-color: rgba(11, 15, 25, 0.5);
+        }
+
+        footer a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1rem;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .sitemap-grid {
+                grid-template-columns: 1fr;
+            }
+            .stats-bar {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span>Dhiman Codes</span>
+            </a>
+            <a href="index.html" class="btn-back">
+                ← Back to Main Site
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container">
+        
+        <!-- Hero Section -->
+        <section class="hero">
+            <span class="tag">Site Navigation Directory</span>
+            <h1>HTML Sitemap</h1>
+            <p>Explore the complete structure of Dhiman Codes. Access our core services, client portfolio, technical case studies, and business resources.</p>
+            
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="sitemapSearch" placeholder="Search pages, services, or portfolio projects..." onkeyup="filterSitemap()">
+            </div>
+        </section>
+
+        <!-- Stats Overview Bar -->
+        <div class="stats-bar">
+            <div class="stat-item">
+                <div class="number">24+</div>
+                <div class="label">Indexed Pages & Sections</div>
+            </div>
+            <div class="stat-item">
+                <div class="number">5+</div>
+                <div class="label">Featured Client Case Studies</div>
+            </div>
+            <div class="stat-item">
+                <div class="number">6</div>
+                <div class="label">Core Service Offerings</div>
+            </div>
+            <div class="stat-item">
+                <div class="number">100%</div>
+                <div class="label">Mobile & SEO Optimized</div>
+            </div>
+        </div>
+
+        <!-- Sitemap Grid Container -->
+        <div class="sitemap-grid" id="sitemapGrid">
+
+            <!-- Card 1: Main Site Pages -->
+            <div class="sitemap-card">
+                <div class="card-header">
+                    <div class="card-icon">🏠</div>
+                    <h2>Main Site Pages</h2>
+                </div>
+                <ul class="link-list">
+                    <li class="link-item">
+                        <a href="index.html" class="link-title">
+                            Home Page
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                        <p class="link-desc">Main landing page featuring custom web development services, ERP solutions, and client showcase across PAN India.</p>
+                        <div class="link-meta">
+                            <span class="url-badge">/index.html</span>
+                            <span class="badge-status status-live">Live</span>
+                        </div>
+                    </li>
+                    <li class="link-item">
+                        <a href="index.html#features" class="link-title">
+                            Our Services
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                        <p class="link-desc">Comprehensive list of web development, ERP building, UI/UX design, and speed optimization capabilities.</p>
+                        <div class="link-meta">
+                            <span class="url-badge">/#features</span>
+                            <span class="badge-status status-page">Section</span>
+                        </div>
+                    </li>
+                    <li class="link-item">
+                        <a href="index.html#showcase" class="link-title">
+                            Portfolio & Work
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                        <p class="link-desc">Interactive portfolio gallery presenting real-world web applications and management systems built for client companies.</p>
+                        <div class="link-meta">
+                            <span class="url-badge">/#showcase</span>
+                            <span class="badge-status status-page">Section</span>
+                        </div>
+                    </li>
+                    <li class="link-item">
+                        <a href="index.html#benefits" class="link-title">
+                            Why Choose Us
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                        <p class="link-desc">Dhiman Codes key differentiators, speed score metrics, client satisfaction rates, and service guarantees.</p>
+                        <div class="link-meta">
+                            <span class="url-badge">/#benefits</span>
+                            <span class="badge-status status-page">Section</span>
+                        </div>
+                    </li>
+                    <li class="link-item">
+                        <a href="index.html#pricing" class="link-title">
+                            Pricing & Tiers
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                        <p class="link-desc">Transparent pricing tiers for business websites, custom web apps, and enterprise ERP software implementations.</p>
+                        <div class="link-meta">
+                            <span class="url-badge">/#pricing</span>
+                            <span class="badge-status status-page">Section</span>
+                        </div>
+                    </li>
+                    <li class="link-item">
+                        <a href="index.html#faq" class="link-title">
+                            Frequently Asked Questions
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                        <p class="link-desc">Answers to common questions regarding timelines, post-launch maintenance, hosting, and custom integrations.</p>
+                        <div class="link-meta">
+                            <span class="url-badge">/#faq</span>
+                            <span class="badge-status status-page">Section</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Card 2: Development Services Directory -->
+            <div class="sitemap-card">
+                <div class="card-header">
+                    <div class="card-icon">⚡</div>
+                    <h2>Services Directory</h2>
+                </div>
+                <ul class="link-list">
+                    <li class="link-item">
+                        <a href="index.html#features" class="link-title">
+                            Lightning Fast Web Development
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                        <p class="link-desc">Sub-second loading speed optimization with modern frontend stacks, CDN delivery, and efficient coding practices.</p>
+                        <div class="link-meta">
+                            <span class="url-badge">/services#speed</span>
+                            <span class="badge-status status-live">Service</span>
+                        </div>
+                    </li>
+                    <li class="link-item">
+                        <a href="index.html#features" class="link-title">
+                            ERP & Management Systems
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                        <p class="link-desc">Tailored enterprise resource planning, billing generators, stock tracking, and educational institute management web apps.</p>
+                        <div class="link-meta">
+                            <span class="url-badge">/services#erp</span>
+                            <span class="badge-status status-live">Service</span>
+                        </div>
+                    </li>
+                    <li class="link-item">
+                        <a href="index.html#features" class="link-title">
+                            Stunning UI/UX Web Design
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                        <p class="link-desc">Pixel-perfect, modern website designs engineered to capture visitor attention and drive conversion rates higher.</p>
+                        <div class="link-meta">
+                            <span class="url-badge">/services#uiux</span>
+                            <span class="badge-status status-live">Service</span>
+                        </div>
+                    </li>
+                    <li class="link-item">
+                        <a href="index.html#features" class="link-title">
+                            Mobile-First Responsive Layouts
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                        <p class="link-desc">Seamless multi-device responsiveness optimized for India's mobile-dominant web traffic environment.</p>
+                        <div class="link-meta">
+                            <span class="url-badge">/services#responsive</span>
+                            <span class="badge-status status-live">Service</span>
+                        </div>
+                    </li>
+                    <li class="link-item">
+                        <a href="index.html#features" class="link-title">
+                            Search Engine Optimization (SEO)
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                        <p class="link-desc">Built-in technical SEO, structured markup (JSON-LD), clean heading taxonomy, and speed optimization for top rankings.</p>
+                        <div class="link-meta">
+                            <span class="url-badge">/services#seo</span>
+                            <span class="badge-status status-live">Service</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Card 3: Client Case Studies & Portfolio -->
+            <div class="sitemap-card">
+                <div class="card-header">
+                    <div class="card-icon">🚀</div>
+                    <h2>Client Projects & Case Studies</h2>
+                </div>
+                <ul class="link-list">
+                    <li class="link-item">
+                        <a href="https://www.sakshitelectronics.com" target="_blank" class="link-title">
+                            Sakshit Electronics & Library
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                        <p class="link-desc">Custom Stock Management system, automated bill generator, and student library web app built for Dixit Sharma.</p>
+                        <div class="link-meta">
+                            <span class="url-badge">sakshitelectronics.com</span>
+                            <span class="badge-status status-live">Client Project</span>
+                        </div>
+                    </li>
+                    <li class="link-item">
+                        <a href="https://www.bewes.org.in" target="_blank" class="link-title">
+                            Bright Eyes Welfare Education Society
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                        <p class="link-desc">Educational society web portal featuring programs, event highlights, and admissions platform for Anil Kumar.</p>
+                        <div class="link-meta">
+                            <span class="url-badge">bewes.org.in</span>
+                            <span class="badge-status status-live">Client Project</span>
+                        </div>
+                    </li>
+                    <li class="link-item">
+                        <a href="https://www.dkcsm.org.in" target="_blank" class="link-title">
+                            Rural Urban Skill Development Institute
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                        <p class="link-desc">Complete enterprise institute ERP for enrollment, student tracking, fees, and certifications for Devender Kaushik.</p>
+                        <div class="link-meta">
+                            <span class="url-badge">dkcsm.org.in</span>
+                            <span class="badge-status status-live">Client Project</span>
+                        </div>
+                    </li>
+                    <li class="link-item">
+                        <a href="https://rdhimancoder.github.io/rgcsm/" target="_blank" class="link-title">
+                            Rajiv Gandhi Computer Saksharta Mission
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                        <p class="link-desc">Redesigned educational mission landing page and course showcase demo for Dr. K. P. Singh.</p>
+                        <div class="link-meta">
+                            <span class="url-badge">/rgcsm/</span>
+                            <span class="badge-status status-live">Demo Web App</span>
+                        </div>
+                    </li>
+                    <li class="link-item">
+                        <a href="https://rdhimancoder.github.io/macs/" target="_blank" class="link-title">
+                            MACS Academy
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                        <p class="link-desc">Modern academy landing page design and student intake platform for Rajesh Kangra.</p>
+                        <div class="link-meta">
+                            <span class="url-badge">/macs/</span>
+                            <span class="badge-status status-live">Demo Web App</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Card 4: Technical & Directives -->
+            <div class="sitemap-card">
+                <div class="card-header">
+                    <div class="card-icon">🛠️</div>
+                    <h2>Process & Technical Resources</h2>
+                </div>
+                <ul class="link-list">
+                    <li class="link-item">
+                        <a href="index.html#cta" class="link-title">
+                            Start Your Project / Request Quote
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                        <p class="link-desc">Get in touch for a custom quote, consultation, or technical evaluation for your business project.</p>
+                        <div class="link-meta">
+                            <span class="url-badge">/#cta</span>
+                            <span class="badge-status status-live">Contact</span>
+                        </div>
+                    </li>
+                    <li class="link-item">
+                        <a href="sitemap.xml" target="_blank" class="link-title">
+                            XML Sitemap (Search Engines)
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                        <p class="link-desc">Machine-readable XML format site map for Google Search Console, Bing Webmaster, and search crawlers.</p>
+                        <div class="link-meta">
+                            <span class="url-badge">/sitemap.xml</span>
+                            <span class="badge-status status-page">Technical</span>
+                        </div>
+                    </li>
+                    <li class="link-item">
+                        <a href="robots.txt" target="_blank" class="link-title">
+                            Robots.txt Directive File
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                        <p class="link-desc">Crawler rules and instructions instructing Googlebot and automated web indexers.</p>
+                        <div class="link-meta">
+                            <span class="url-badge">/robots.txt</span>
+                            <span class="badge-status status-page">Technical</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 <strong>Dhiman Codes</strong>. All rights reserved. Crafting High-Performance Web Apps across India.</p>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="sitemap.html">Sitemap</a>
+            <a href="sitemap.xml">XML Sitemap</a>
+            <a href="index.html#cta">Contact Us</a>
+        </div>
+    </footer>
+
+    <!-- Search Filter Logic -->
+    <script>
+        function filterSitemap() {
+            let input = document.getElementById('sitemapSearch').value.toLowerCase();
+            let cards = document.getElementsByClassName('sitemap-card');
+            
+            for (let card of cards) {
+                let items = card.getElementsByClassName('link-item');
+                let cardHasMatch = false;
+                
+                for (let item of items) {
+                    let title = item.getElementsByClassName('link-title')[0].innerText.toLowerCase();
+                    let desc = item.getElementsByClassName('link-desc')[0].innerText.toLowerCase();
+                    
+                    if (title.includes(input) || desc.includes(input)) {
+                        item.style.display = "flex";
+                        cardHasMatch = true;
+                    } else {
+                        item.style.display = "none";
+                    }
+                }
+                
+                if (cardHasMatch) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
