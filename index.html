@@ -1347,9 +1347,9 @@
 <body>
 
     <!-- Page Loader -->
-    <!--<div class="page-loader" id="pageLoader">
+    <div class="page-loader" id="pageLoader">
         <div class="loader-spinner"></div>
-    </div>-->
+    </div>
 
     <!-- Ambient Background -->
     <div class="ambient-bg">
@@ -1980,31 +1980,16 @@
     </footer>
 
     <script>
-        // ===== Translations =====
-        
-
-        // ===== Theme Toggle =====
-        /*const themeToggle = document.getElementById('themeToggle');
-        let currentTheme = 'light';
-
-        themeToggle.addEventListener('click', () => {
-            currentTheme = currentTheme === 'light' ? 'dark' : 'light';
-            document.documentElement.setAttribute('data-theme', currentTheme);
-            themeToggle.textContent = currentTheme === 'light' ? '☀️' : '🌙';
-        });*/
 
         const themeToggle = document.getElementById('themeToggle');
-
         // 1. Get current theme from HTML attribute or localStorage, falling back to 'light'
         let currentTheme = localStorage.getItem('theme') || document.documentElement.getAttribute('data-theme') || 'light';
-        
-        // 2. Ensure DOM attribute and button text match the initial state on load
+                // 2. Ensure DOM attribute and button text match the initial state on load
         document.documentElement.setAttribute('data-theme', currentTheme);
         if (themeToggle) {
             themeToggle.textContent = currentTheme === 'light' ? '☀️' : '🌙';
         }
-        
-        // 3. Toggle theme smoothly on click
+                // 3. Toggle theme smoothly on click
         if (themeToggle) {
             themeToggle.addEventListener('click', () => {
                 // Read directly from the DOM attribute to prevent state desync
@@ -2014,7 +1999,7 @@
                 document.documentElement.setAttribute('data-theme', newTheme);
                 localStorage.setItem('theme', newTheme);
                 themeToggle.textContent = newTheme === 'light' ? '☀️' : '🌙';
-            });
+            //});
         }
 
         // ===== Mobile Menu =====
