@@ -2017,34 +2017,42 @@ if (mobileToggle && mobileMenu) {
 // ===== Typed Effect =====
 (function() {
     const el = document.getElementById('typedText');
-    // Ensure element exists and translations data is available
-    if (!el || typeof translations === 'undefined' || typeof currentLang === 'undefined') return;
+    if (!el) return;
+
+    // Define your array of phrases directly here
+    const words = [
+        "Frontend Developer",
+        "UI/UX Designer",
+        "Problem Solver",
+        "Tech Enthusiast"
+    ];
 
     let wordIdx = 0, charIdx = 0, deleting = false;
-    function type() {
-        const words = translations?.[currentLang]?.typed_words;
-        if (!words || words.length === 0) return;
 
+    function type() {
         const word = words[wordIdx];
+
         if (!deleting) {
             charIdx++;
             el.textContent = word.substring(0, charIdx);
+
             if (charIdx === word.length) {
                 deleting = true;
-                setTimeout(type, 2000);
+                setTimeout(type, 2000); // Hold full word for 2 seconds
                 return;
             }
-            setTimeout(type, 100);
+            setTimeout(type, 100); // Typing speed (ms)
         } else {
             charIdx--;
             el.textContent = word.substring(0, charIdx);
+
             if (charIdx === 0) {
                 deleting = false;
-                wordIdx = (wordIdx + 1) % words.length;
-                setTimeout(type, 500);
+                wordIdx = (wordIdx + 1) % words.length; // Loop to next word
+                setTimeout(type, 500); // Pause before typing next word
                 return;
             }
-            setTimeout(type, 40);
+            setTimeout(type, 40); // Erasing speed (ms)
         }
     }
     type();
