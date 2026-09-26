@@ -104,4 +104,4 @@ If you have questions, concerns, or requests regarding this Privacy Policy or yo
 
 * **Name:** Rajiv Dhiman  
 * **Website / Contact:** [https://rdhimancoder.github.io/dhiman.codes/#contact](https://rdhimancoder.github.io/dhiman.codes/#contact)  
-* **Email:** rdhimancodes@gmail.com
+* **Email:** rdhimancoder@gmail.com
